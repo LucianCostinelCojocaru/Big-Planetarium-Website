@@ -1,18 +1,34 @@
-/* Basic page styling */
+/* Accessibility skip link */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 10px;
+    background: #facc15;
+    color: black;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+/* Body styling */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #07111f;
-    color: #ffffff;
+    color: white;
     line-height: 1.6;
 }
 
-/* Header and navigation */
+/* Header */
 header {
     background-color: #020617;
     padding: 20px;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,7 +49,7 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -51,6 +67,7 @@ main {
     padding: 30px;
 }
 
+/* Hero section */
 .hero {
     background: linear-gradient(135deg, #1e3a8a, #7c3aed);
     padding: 50px;
@@ -58,6 +75,7 @@ main {
     text-align: center;
 }
 
+/* Content cards */
 .content-card {
     background-color: #111827;
     margin-top: 25px;
@@ -84,7 +102,7 @@ button:focus,
 .button-link:hover,
 .button-link:focus {
     background-color: #fde68a;
-    outline: 3px solid #ffffff;
+    outline: 3px solid white;
 }
 
 /* Gallery */
@@ -99,6 +117,7 @@ img {
     border-radius: 12px;
 }
 
+/* Video */
 iframe {
     width: 100%;
     height: 350px;
@@ -114,7 +133,7 @@ footer {
     margin-top: 30px;
 }
 
-/* Light theme for JavaScript button */
+/* Light theme */
 .light-theme {
     background-color: #f8fafc;
     color: #020617;
@@ -126,7 +145,7 @@ footer {
 }
 
 .light-theme .content-card {
-    background-color: #ffffff;
+    background-color: white;
     color: #020617;
 }
 
@@ -134,8 +153,9 @@ footer {
     color: #020617;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design */
 @media (max-width: 700px) {
+
     nav {
         flex-direction: column;
     }

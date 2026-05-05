@@ -1,69 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BigPlanetarium | Gallery</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- Accessibility skip link -->
+    <a class="skip-link" href="#mainContent">
+        Skip to main content
+    </a>
+
     <header>
+
         <nav aria-label="Main navigation">
+
             <h1>BigPlanetarium</h1>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mars.html">Mars</a></li>
-                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
 
-            <button id="themeButton">Change Theme</button>
+            <button id="themeButton">
+                Change Theme
+            </button>
+
         </nav>
+
     </header>
 
-    <main>
+    <main id="mainContent">
+
         <section class="hero">
+
             <h2>Space Gallery</h2>
+
             <p>
-                Explore images and media that help make space fun, visual, and easier to understand.
+                Explore images and media that help make space fun and educational.
             </p>
+
         </section>
 
         <section class="gallery-grid">
+
             <article class="content-card">
-                <img src="images/galaxy.jpg" alt="A colourful spiral galaxy in space">
+
+                <img src="images/galaxy.jpg"
+                    alt="A colourful spiral galaxy in space">
+
                 <h2>The Milky Way</h2>
-                <p>A spiral galaxy containing our Solar System.</p>
+
+                <p>
+                    A spiral galaxy containing our Solar System.
+                </p>
+
             </article>
 
             <article class="content-card">
-                <img src="images/mars.jpg" alt="The red planet Mars shown against dark space">
+
+                <img src="images/mars.jpg"
+                    alt="The planet Mars shown in space">
+
                 <h2>Mars</h2>
-                <p>The Red Planet is a key focus for space exploration.</p>
+
+                <p>
+                    Mars is often called the Red Planet.
+                </p>
+
             </article>
 
             <article class="content-card">
-                <img src="images/space.jpg" alt="Stars and glowing clouds of gas in outer space">
+
+                <img src="images/space.jpg"
+                    alt="Stars and deep space clouds">
+
                 <h2>Deep Space</h2>
-                <p>Space contains stars, planets, galaxies, and much more.</p>
+
+                <p>
+                    Space contains galaxies, stars, and planets.
+                </p>
+
             </article>
+
         </section>
 
         <section class="content-card">
-            <h2>Video: Learn About Space</h2>
-            <iframe 
+
+            <h2>Educational Space Video</h2>
+
+            <iframe
                 src="https://www.youtube.com/embed/libKVRa01L8"
                 title="Educational video about space"
                 allowfullscreen>
             </iframe>
+
         </section>
+
     </main>
 
     <footer>
+
         <p>&copy; 2026 BigPlanetarium Educational Prototype</p>
+
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
