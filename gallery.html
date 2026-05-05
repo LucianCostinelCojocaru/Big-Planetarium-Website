@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigPlanetarium | Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <h1>BigPlanetarium</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+            </ul>
+
+            <button id="themeButton">Change Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Space Gallery</h2>
+            <p>
+                Explore images and media that help make space fun, visual, and easier to understand.
+            </p>
+        </section>
+
+        <section class="gallery-grid">
+            <article class="content-card">
+                <img src="images/galaxy.jpg" alt="A colourful spiral galaxy in space">
+                <h2>The Milky Way</h2>
+                <p>A spiral galaxy containing our Solar System.</p>
+            </article>
+
+            <article class="content-card">
+                <img src="images/mars.jpg" alt="The red planet Mars shown against dark space">
+                <h2>Mars</h2>
+                <p>The Red Planet is a key focus for space exploration.</p>
+            </article>
+
+            <article class="content-card">
+                <img src="images/space.jpg" alt="Stars and glowing clouds of gas in outer space">
+                <h2>Deep Space</h2>
+                <p>Space contains stars, planets, galaxies, and much more.</p>
+            </article>
+        </section>
+
+        <section class="content-card">
+            <h2>Video: Learn About Space</h2>
+            <iframe 
+                src="https://www.youtube.com/embed/libKVRa01L8"
+                title="Educational video about space"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BigPlanetarium Educational Prototype</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
